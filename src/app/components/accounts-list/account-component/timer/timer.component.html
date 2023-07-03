@@ -1,0 +1,28 @@
+<!-- <div *ngIf="this.difference > 0" class="count-down-timer watch">
+  <div class="wrapper">
+    <div class="description">
+      <p>Days</p>
+      <p>Hours</p>
+      <p>Minutes</p>
+    </div>
+    <div class="times">
+      <p>{{daysDiffrence}}</p>
+      <p>{{hoursDiffrence}}</p>
+      <p>{{minutesDiffrence}}</p>
+    </div>
+  </div>
+</div> -->
+<div *ngIf="this.difference > 0" class="container">
+  <div class="time">
+    <p class="time-description">Days</p>
+    <p class="time-display">{{daysDiffrence}}</p>
+  </div>
+  <div class="time">
+    <p class="time-description">Hours</p>
+    <p class="time-display">{{hoursDiffrence}}</p>
+  </div>
+  <div class="time">
+    <p class="time-description">Minutes</p>
+    <p class="time-display">{{minutesDiffrence}}</p>
+  </div>
+</div>

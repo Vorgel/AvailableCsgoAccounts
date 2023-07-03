@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-account-button {
+  height: 40px;
+  border: 1px solid green;
+  background-color: green;
+  color: white;
+  margin-bottom: 100px;
+}

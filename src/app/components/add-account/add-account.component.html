@@ -1,0 +1,28 @@
+<h2 mat-dialog-title>Add account</h2>
+<form mat-dialog-content [formGroup]="form" class="form">
+  <mat-form-field class="name-field">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" name="name" [required]="true">
+  </mat-form-field>
+
+  <div class="ban-time-field">
+    <mat-form-field class="ban-time">
+      <mat-label>Days:</mat-label>
+      <input matInput formControlName="banInDays" name="banInDays" type="number" [required]="true">
+    </mat-form-field>
+    
+    <mat-form-field class="ban-time">
+      <mat-label>Hours:</mat-label>
+      <input matInput formControlName="banInHours" name="banInHours" type="number" [required]="true">
+    </mat-form-field>
+  
+    <mat-form-field class="ban-time">
+      <mat-label>Minutes:</mat-label>
+      <input matInput formControlName="banInMinutes" name="banInMinutes" type="number" [required]="true">
+    </mat-form-field>
+  </div>
+</form>
+<div mat-dialog-actions class="button-group">
+  <button mat-button (click)="onCancel()">CANCEL</button>
+  <button mat-button color="primary" (click)="onSave()">SAVE</button>
+</div>

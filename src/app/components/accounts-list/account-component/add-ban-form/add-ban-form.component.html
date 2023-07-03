@@ -1,0 +1,20 @@
+<div class="form-field-container" >
+    <form [formGroup]="form" class="form" (ngSubmit)="addNewBan()">
+        <mat-form-field name="banInDays">
+            <mat-label>Days</mat-label>
+            <input matInput  type="number" formControlName="banInDays" placeholder="D" [required]="true">
+        </mat-form-field>
+    
+        <mat-form-field name="banInHours">
+            <mat-label>Hours</mat-label>
+            <input matInput  type="number" formControlName="banInHours" placeholder="H" [required]="true">
+        </mat-form-field>
+    
+        <mat-form-field name="banInMinutes">
+            <mat-label>Minutes</mat-label>
+            <input matInput  type="number" formControlName="banInMinutes" placeholder="M" [required]="true">
+        </mat-form-field>
+        
+        <button mat-button type="submit" class="custom-button">ADD</button>
+    </form>
+</div>

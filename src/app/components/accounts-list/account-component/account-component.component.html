@@ -1,0 +1,18 @@
+<div class="container">
+  <mat-card class="account">
+    <mat-card-header class="account-name">
+      <mat-icon class="close-icon" (click)="removeAccount()">clear</mat-icon>
+        <mat-card-title >
+            {{account.name}}
+        </mat-card-title>
+    </mat-card-header>
+  <mat-card-content class="ban-info">
+    <app-status-label [isAvailable]="isAccountAvailable()"></app-status-label>
+    <div *ngIf="!isAccountAvailable()" class="ban-display">
+      <app-timer [account]="account" class="flex-item"></app-timer> 
+      <button *ngIf="!isAccountAvailable()" mat-button class="remove-button" (click)="removeBan()">REMOVE</button>
+    </div>
+    <app-add-ban-form *ngIf="isAccountAvailable()" (banAdded)="handleBanAdded($event)" class="flex-item"></app-add-ban-form>
+  </mat-card-content>
+</mat-card>
+</div>

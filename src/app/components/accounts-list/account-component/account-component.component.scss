@@ -1,0 +1,50 @@
+.account {
+    max-width: 500px;
+    width: 300px;
+    margin: 20px;
+}
+
+.account-name {
+    display: flex;
+    justify-content: center;
+}
+
+.ban-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.ban-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    height: 100%;
+}
+
+.flex-item {
+    flex: 1;
+    display: inline-flex;
+}
+
+.remove-button {
+    height: 100%;
+    border: 1px solid #871504;
+    background-color: #871504;
+    color: white;
+    align-self: center;
+}
+
+.container {
+    height: 100%;
+}
+
+.mat-card {
+    height: 205px;
+}
+
+.close-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+}

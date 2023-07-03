@@ -1,0 +1,27 @@
+.label-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.custom-label {
+    box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 6px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+  
+.banned {
+    background-color: #871504;
+    color: white;
+}
+
+.available {
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

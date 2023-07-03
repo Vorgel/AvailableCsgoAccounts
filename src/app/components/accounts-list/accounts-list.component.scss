@@ -1,0 +1,12 @@
+.account-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+}
+
+.account {
+    margin-right: 30
+}
